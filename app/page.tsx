@@ -1,113 +1,141 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="max-w-full">
+      <div className="w-full h-auto relative hidden lg:block">
+        <Image
+          className="w-full h-auto"
+          src={"/building.png"}
+          alt="construction"
+          width={1000}
+          height={500}
+          priority={true}
+        />
+        <h3 className="w-[37%] h-auto absolute bottom-3/4 left-28 text-segGrey text-5xl leading-relaxed">
+          Engineering Solution for Everyone.
+        </h3>
+        <div className="w-2/3 h-auto absolute bottom-60 left-28 ">
+          <p className="text-lg leading-10 text-white text-justify">
+            For over 20 years, Segadesh has been at the forefront of delivering
+            pioneering engineering solutions across diverse domains. Our
+            unwavering commitment to excellence has solidified our position as a
+            trusted partner for companies seeking innovative mechanical,
+            electrical, construction, office automation, and energy metering
+            services.With a team of highly skilled professionals and a wealth of
+            industry experience, we pride ourselves on providing tailored
+            solutions that exceed expectations. Our commitment to quality,
+            efficiency, and customer satisfaction is the driving force behind
+            our success.
+          </p>
+          <Link
+            className="w-32 h-12 bg-segRed rounded-lg flex flex-row space-x-2 items-center justify-center my-2"
+            href={"/about-us"}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <h3 className="text-segGrey text-base leading-relaxed">
+              Learn More
+            </h3>
+            <ArrowRight color="#fff" size={15} />
+          </Link>
+        </div>
+        <div className="flex flex-row items-center justify-center w-full">
+          <div className="flex flex-col items-center h-auto w-auto p-5 bg-segBlue">
+            <h3 className="text-white text-4xl leading-relaxed font-bold">
+              147
+            </h3>
+            <h6 className="text-white text-[12px] leading-relaxed">
+              Completed Projects
+            </h6>
+          </div>
+          <div className="flex flex-col items-center h-auto w-auto p-5 bg-segRed">
+            <h3 className="text-white text-4xl leading-relaxed font-bold">
+              20+
+            </h3>
+            <h6 className="text-white text-[12px] leading-relaxed">
+              Years of Experience
+            </h6>
+          </div>
+          <div className="border-t-segBlue border-y-[6px] w-1/4 h-auto py-2 px-7 absolute right-44 bg-white">
+            <div className="w-auto h-auto flex flex-col space-y-3 items-center mb-6">
+              <div className="w-auto h-auto">
+                <h3 className="capitalize text-segBlue text-lg font-semibold">
+                  We Pioneer Comprehensive Solutions to all Engineering
+                  Infrastructures
+                </h3>
+              </div>
+              <div className="w-auto h-auto flex flex-col space-y-2">
+                <div className="flex flex-row space-x-3 items-center">
+                  <Image
+                    src={"/engineer.svg"}
+                    width={40}
+                    height={10}
+                    alt="eng svg"
+                  />
+                  <div className="flex flex-col space-y-1 items-start">
+                    <h4 className="text-xs capitalize text-segBlue leading-relaxed font-medium">
+                      General Contract
+                    </h4>
+                    <p className="text-[8px]">
+                      With a team of highly skilled professionals and a wealth
+                      of industry experience, we pride ourselves on providing
+                      tailored solutions that exceed expectations.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row space-x-3 items-center">
+                  <Image
+                    src={"/ruler.svg"}
+                    width={40}
+                    height={10}
+                    alt="eng svg"
+                  />
+                  <div className="flex flex-col space-y-1 items-start">
+                    <h4 className="text-xs capitalize text-segBlue leading-relaxed font-medium">
+                      project planning
+                    </h4>
+                    <p className="text-[8px]">
+                      With a team of highly skilled professionals and a wealth
+                      of industry experience, we pride ourselves on providing
+                      tailored solutions that exceed expectations.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row space-x-3 items-center">
+                  <Image
+                    src={"/measuring-tool.svg"}
+                    width={40}
+                    height={10}
+                    alt="eng svg"
+                  />
+                  <div className="flex flex-col space-y-1 items-start">
+                    <h4 className="text-xs capitalize text-segBlue leading-relaxed font-medium">
+                      refurbishment
+                    </h4>
+                    <p className="text-[8px]">
+                      With a team of highly skilled professionals and a wealth
+                      of industry experience, we pride ourselves on providing
+                      tailored solutions that exceed expectations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+      <div className="w-full h-auto block lg:hidden">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className="w-full h-auto"
+          src={"/building.png"}
+          alt="construction"
+          width={1000}
+          height={500}
+          priority={true}
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
