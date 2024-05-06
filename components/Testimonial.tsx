@@ -14,7 +14,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TESTIMONIALS } from "@/texts/testimonials";
 
 const Testimonial = () => {
-  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
+  const plugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnLastSnap: false })
+  );
   return (
     <div>
       <Carousel
@@ -24,28 +26,28 @@ const Testimonial = () => {
         onMouseLeave={plugin.current.reset}
         opts={{ align: "center" }}
       >
-        <CarouselContent className="w-[1000px]">
+        <CarouselContent className="w-full md:w-[1000px]">
           {TESTIMONIALS.map((eachTest) => (
             <CarouselItem key={eachTest.id}>
               <Card>
                 <CardContent>
-                  <div className="w-auto flex flex-row space-x-3 items-center">
+                  <div className="flex flex-col md:flex-row space-y-3 md:space-x-3 items-center justify-center">
                     <Image
-                      className="w-64 h-auto"
+                      className="w-48 md:w-64 h-auto"
                       src={eachTest.image}
                       alt={eachTest.image}
                       height={200}
                       width={100}
                       priority={true}
                     />
-                    <div className="flex flex-col w-[700px] p-4 items-start space-y-2">
-                      <p className="text-black text-sm leading-relaxed">
+                    <div className="flex flex-col w-full md:w-[500px] lg:w-[700px] p-4 items-center justify-center md:items-start space-y-2">
+                      <p className="text-black text-xs md:text-sm leading-relaxed max-w-72 md:max-w-screen-md text-center md:text-start">
                         {eachTest.comment}
                       </p>
-                      <h2 className="text-2xl text-segBlue leading-relaxed font-semibold">
+                      <h2 className="text-sm md:text-2xl text-segBlue leading-relaxed font-semibold">
                         {eachTest.name}
                       </h2>
-                      <h3 className="text-lg text-segRed leading-relaxed font-medium">
+                      <h3 className="md:text-lg text-segRed leading-relaxed font-medium">
                         {eachTest.title}
                       </h3>
                     </div>
