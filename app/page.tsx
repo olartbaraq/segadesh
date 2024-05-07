@@ -86,7 +86,7 @@ const Home = () => {
               <h2 className="text-3xl text-white font-bold my-5">
                 Research & Analysis
               </h2>
-              <p className="text-sm leading-relaxed text-segGrey w-[200px] lg:w-[300px]">
+              <p className="text-sm leading-relaxed text-segGrey w-[200px] lg:w-[250px]">
                 We employ rigorous methodologies and leverage cutting-edge tools
                 to gather and analyze data from various sources, uncovering
                 insights that drive informed decision-making.
@@ -106,7 +106,7 @@ const Home = () => {
               <h2 className="text-3xl text-white font-bold my-5">
                 Industry Development
               </h2>
-              <p className="text-sm leading-relaxed text-segGrey w-[200px] lg:w-[300px]">
+              <p className="text-sm leading-relaxed text-segGrey w-[200px] lg:w-[250px]">
                 By staying ahead of the curve, we empower our clients to
                 capitalize on emerging opportunities, optimize their operations,
                 and maintain a competitive edge in their respective industries.
@@ -126,7 +126,7 @@ const Home = () => {
               <h2 className="text-3xl text-white font-bold my-5">
                 Production Launch
               </h2>
-              <p className="text-sm leading-relaxed text-segGrey w-[200px] lg:w-[300px]">
+              <p className="text-sm leading-relaxed text-segGrey w-[200px] lg:w-[250px]">
                 From resource allocation and supply chain optimization to
                 rigorous testing and training, we leave no stone unturned.
               </p>
