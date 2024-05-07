@@ -75,18 +75,18 @@ const Home = () => {
         <div className="w-full flex flex-col md:flex-row items-center">
           <div className="relative">
             <Image
-              className="w-80 md:w-72 lg:w-80 h-[390px]"
+              className="w-80 md:w-72 lg:w-80 h-[390px] lg:h-[368px]"
               src={"/industrial.png"}
               alt="project 2"
               width={600}
               height={1000}
               priority={true}
             />
-            <div className="w-80 md:w-72 lg:w-80 h-[390px] bg-segBlue opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
+            <div className="w-80 md:w-72 lg:w-80 h-[390px] lg:h-[368px] bg-segBlue opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
               <h2 className="text-3xl text-white font-bold my-5">
                 Research & Analysis
               </h2>
-              <p className="text-sm leading-relaxed text-segGrey">
+              <p className="text-sm leading-relaxed text-segGrey w-[200px]">
                 We employ rigorous methodologies and leverage cutting-edge tools
                 to gather and analyze data from various sources, uncovering
                 insights that drive informed decision-making.
@@ -95,18 +95,18 @@ const Home = () => {
           </div>
           <div className="relative">
             <Image
-              className="w-80 md:w-72 lg:w-80 h-[390px]"
+              className="w-80 md:w-72 lg:w-80 h-[390px] lg:h-[368px]"
               src={"/crane.png"}
               alt="crane"
               width={600}
               height={1000}
               priority={true}
             />
-            <div className="w-80 md:w-72 lg:w-80 h-[390px] bg-segRed opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
+            <div className="w-80 md:w-72 lg:w-80 h-[390px] lg:h-[368px] bg-segRed opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
               <h2 className="text-3xl text-white font-bold my-5">
                 Industry Development
               </h2>
-              <p className="text-sm leading-relaxed text-segGrey">
+              <p className="text-sm leading-relaxed text-segGrey w-[200px]">
                 By staying ahead of the curve, we empower our clients to
                 capitalize on emerging opportunities, optimize their operations,
                 and maintain a competitive edge in their respective industries.
@@ -115,18 +115,18 @@ const Home = () => {
           </div>
           <div className="relative">
             <Image
-              className="w-80 md:w-72 lg:w-80 h-[390px]"
+              className="w-80 md:w-72 lg:w-80 h-[390px] lg:h-[368px]"
               src={"/houses.png"}
               alt="houses"
               width={600}
               height={1000}
               priority={true}
             />
-            <div className="w-80 md:w-72 lg:w-80 h-[390px] bg-segBlue opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
+            <div className="w-80 md:w-72 lg:w-80 h-[390px] lg:h-[368px] bg-segBlue opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
               <h2 className="text-3xl text-white font-bold my-5">
                 Production Launch
               </h2>
-              <p className="text-sm leading-relaxed text-segGrey">
+              <p className="text-sm leading-relaxed text-segGrey w-[200px]">
                 From resource allocation and supply chain optimization to
                 rigorous testing and training, we leave no stone unturned.
               </p>

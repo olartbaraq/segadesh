@@ -18,7 +18,7 @@ const HeroSection = () => {
         <h3 className="w-[37%] h-auto absolute bottom-3/4 left-28 text-segGrey text-5xl leading-relaxed">
           Engineering Solution for Everyone.
         </h3>
-        <div className="w-2/3 h-auto absolute bottom-72 left-28 ">
+        <div className="w-2/3 h-auto absolute bottom-48 left-28 ">
           <p className="text-lg leading-10 text-white text-justify">
             For over 20 years, Segadesh has been at the forefront of delivering
             pioneering engineering solutions across diverse domains. Our
@@ -62,7 +62,7 @@ const HeroSection = () => {
             </h6>
           </div>
           {/* some features */}
-          <div className="border-t-segBlue border-y-[6px] w-1/4 h-auto py-2 px-7 absolute right-56 bg-white">
+          <div className="border-t-segBlue border-y-[6px] w-1/4 h-auto py-2 px-7 absolute right-44 bg-white">
             <div className="w-auto h-auto flex flex-col space-y-3 items-center mb-6">
               <div className="w-auto h-auto">
                 <h3 className="capitalize text-segBlue text-lg font-semibold">
