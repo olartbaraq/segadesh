@@ -64,7 +64,7 @@ const Home = () => {
       {/* some peripherals */}
       <div className="w-full flex flex-row items-center mt-10 md:mt-56 mb-10">
         <Image
-          className="hidden lg:block lg:w-auto lg:h-auto"
+          className="hidden lg:block lg:w-auto lg:h-[390px]"
           src={"/irons.png"}
           alt="iron bars"
           width={550}
@@ -75,7 +75,7 @@ const Home = () => {
         <div className="w-full flex flex-col md:flex-row items-center">
           <div className="relative">
             <Image
-              className="w-80 md:w-72 lg:w-80 h-[390px]"
+              className="w-80 md:w-72 h-[390px]"
               src={"/industrial.png"}
               alt="project 2"
               width={600}
@@ -95,14 +95,14 @@ const Home = () => {
           </div>
           <div className="relative">
             <Image
-              className="w-80 md:w-72 lg:w-80 h-[390px]"
+              className="w-80 md:w-72 h-[390px]"
               src={"/crane.png"}
               alt="crane"
               width={600}
               height={1000}
               priority={true}
             />
-            <div className="w-80 md:w-72 lg:w-80 h-[390px] bg-segRed opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
+            <div className="w-80 md:w-72 h-[390px] bg-segRed opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
               <h2 className="text-3xl text-white font-bold my-5">
                 Industry Development
               </h2>
@@ -115,14 +115,14 @@ const Home = () => {
           </div>
           <div className="relative">
             <Image
-              className="w-80 md:w-72 lg:w-80 h-[390px]"
+              className="w-80 md:w-72 h-[390px]"
               src={"/houses.png"}
               alt="houses"
               width={600}
               height={1000}
               priority={true}
             />
-            <div className="w-80 md:w-72 lg:w-80 h-[390px] bg-segBlue opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
+            <div className="w-80 md:w-72 h-[390px] bg-segBlue opacity-90 mix-blend-normal absolute top-0 left-0 p-10">
               <h2 className="text-3xl text-white font-bold my-5">
                 Production Launch
               </h2>
@@ -147,7 +147,7 @@ const Home = () => {
           <div className="w-full my-5 grid grid-rows-1 md:grid-cols-3 gap-3 place-self-center place-items-center">
             <div className="row-span-2 relative">
               <Image
-                className="h-[335px] w-auto"
+                className="h-[400px] w-auto"
                 src={"/industrial.png"}
                 alt="building"
                 height={300}
