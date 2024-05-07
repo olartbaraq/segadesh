@@ -33,7 +33,7 @@ const HeroSection = () => {
           </p>
           <Link
             className="w-32 h-12 bg-segRed rounded-lg flex flex-row space-x-2 items-center justify-center my-2"
-            href={"/about-us"}
+            href={"/about"}
           >
             <h3 className="text-segGrey text-base leading-relaxed">
               Learn More
