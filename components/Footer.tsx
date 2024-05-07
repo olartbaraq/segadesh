@@ -28,7 +28,7 @@ const LINKS = [
 
 const Footer = () => {
   return (
-    <div className="w-full flex items-center justify-center mb-8">
+    <div className="w-full flex items-center justify-center">
       <div className="w-full flex items-center">
         {/* Red Part */}
         <div className="bg-segRed w-full h-60 md:h-72 p-4 flex flex-col space-y-4 items-center">
