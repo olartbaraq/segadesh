@@ -147,7 +147,7 @@ const Home = () => {
           <div className="w-full my-5 grid grid-rows-1 md:grid-cols-3 gap-3 place-self-center place-items-center">
             <div className="row-span-2 relative">
               <Image
-                className="h-[400px] w-auto"
+                className="h-[450px] w-auto"
                 src={"/industrial.png"}
                 alt="building"
                 height={300}
