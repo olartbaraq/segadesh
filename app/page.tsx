@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { useState } from "react";
 import { PROJECTS } from "@/texts/projects";
 import Testimonial from "@/components/Testimonial";
 import HeroSection from "@/components/HeroSection";
@@ -215,7 +214,7 @@ const Home = () => {
               company phone
             </h2>
             <p className="font-bold text-segBlue leading-relaxed text-base">
-              +2348166893113
+              +2348173054765
             </p>
           </div>
           <hr className="h-20 w-[2px] bg-segRed m-6 hidden md:block" />
@@ -224,7 +223,7 @@ const Home = () => {
               company email
             </h2>
             <p className="font-bold text-segBlue leading-relaxed text-base">
-              segadesh@gmail.com
+              segadesh@yahoo.com
             </p>
           </div>
           <hr className="h-20 w-[2px] bg-segRed m-6 hidden md:block" />

@@ -69,12 +69,12 @@ const Footer = () => {
           <div className="w-auto flex space-x-3 lg:space-x-10 items-center">
             {/* Quick Links */}
             <div className="flex flex-col space-y-3 items-start h-auto self-start">
-              <h2 className="capitalize text-white text-[6px] md:text-sm leading-relaxed">
+              <h2 className="capitalize text-white text-[6px] md:text-sm lg:text-lg leading-relaxed">
                 quick links
               </h2>
               {QUICK_LINKS.map((link) => (
                 <Link key={link.id} href={link.href}>
-                  <h6 className="text-white text-[5px] md:text-[10px] leading-relaxed font-medium">
+                  <h6 className="text-white text-[5px] md:text-[10px] lg:text-sm leading-relaxed font-medium">
                     {link.name}
                   </h6>
                 </Link>
@@ -83,12 +83,12 @@ const Footer = () => {
 
             {/* Client Support */}
             <div className="flex flex-col space-y-3 items-start h-auto self-start">
-              <h2 className="capitalize text-white text-[6px] md:text-sm leading-relaxed">
+              <h2 className="capitalize text-white text-[6px] md:text-sm lg:text-lg leading-relaxed">
                 client support
               </h2>
               {CLIENT_SUPPORT.map((link) => (
                 <Link key={link.id} href={link.href}>
-                  <h6 className="text-white text-[5px] md:text-[10px] leading-relaxed font-medium">
+                  <h6 className="text-white text-[5px] md:text-[10px] lg:text-sm leading-relaxed font-medium">
                     {link.name}
                   </h6>
                 </Link>
@@ -96,23 +96,23 @@ const Footer = () => {
             </div>
 
             {/* Our News */}
-            <div className="flex flex-col space-y-3 items-start w-16 h-auto self-start md:w-32">
-              <h2 className="capitalize text-white text-[6px] md:text-sm leading-relaxed">
+            <div className="flex flex-col space-y-3 items-start w-16 h-auto self-start md:w-32 lg:w-64">
+              <h2 className="capitalize text-white text-[6px] md:text-sm lg:text-lg leading-relaxed">
                 our news
               </h2>
               {OUR_NEWS.map((link) => (
                 <Link key={link.id} href={link.href}>
-                  <h6 className="text-white text-[5px] md:text-[10px] leading-relaxed font-medium">
+                  <h6 className="text-white text-[5px] md:text-[10px] lg:text-sm leading-relaxed font-medium">
                     {link.title}
                   </h6>
-                  <h6 className="text-white text-[5px] md:text-[10px] leading-relaxed font-medium">
+                  <h6 className="text-white text-[5px] md:text-[10px] lg:text-sm leading-relaxed font-medium">
                     {link.date}
                   </h6>
                 </Link>
               ))}
             </div>
           </div>
-          <h6 className="my-5 text-white text-[4px] md:text-[8px] leading-relaxed text-center self-center">
+          <h6 className="my-5 text-white text-[4px] md:text-[8px] lg:text-[10px] leading-relaxed text-center self-center">
             Mubaraq &copy; Segadesh Template: All rights reserved Copyrights
             2024
           </h6>

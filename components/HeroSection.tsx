@@ -1,15 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Menu, X } from "lucide-react";
-import { useState } from "react";
-import { LINKS } from "@/texts/navbar";
-import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
-  const [navbarOpen, setNavBar] = useState<boolean>(true);
-
   return (
     <>
       {/* dektop navbar and hero section */}
@@ -150,74 +143,7 @@ const HeroSection = () => {
           height={500}
           priority={true}
         />
-        <section
-          className={cn(
-            `absolute top-0 w-full h-auto block md:hidden ${
-              navbarOpen
-                ? "bg-slate-700 mix-blend-hard-light"
-                : "bg-transparent"
-            }`
-          )}
-        >
-          <div className="sticky w-full flex p-5 justify-center items-center">
-            <div className="flex items-start flex-grow">
-              <Image
-                src={cn(
-                  `${navbarOpen ? "/segadesh-white.png" : "/segadesh.png"}`
-                )}
-                alt="site_logo"
-                height={70}
-                width={70}
-              />
-            </div>
-
-            <div className="flex items-start">
-              <button
-                className="border rounded-lg outline-none focus:border-black"
-                onClick={() => setNavBar((prev) => !prev)}
-              >
-                {navbarOpen ? (
-                  <X
-                    className={cn(
-                      "h-10 w-10 invert transition-all text-muted-foreground"
-                    )}
-                  />
-                ) : (
-                  <Menu
-                    className={cn(
-                      "h-10 invert w-10 transition-all text-muted-foreground"
-                    )}
-                  />
-                )}
-              </button>
-            </div>
-          </div>
-
-          {navbarOpen ? (
-            <div className="w-full">
-              <div
-                className={cn(
-                  "w-full py-10 flex flex-col space-y-5 items-center"
-                )}
-              >
-                {LINKS.map((links) => (
-                  <ul key={links.id}>
-                    <Link
-                      className="text-white hover:py-3 px-10 hover:border hover:rounded-3xl hover:bg-black hover:text-white"
-                      href={links.href}
-                      onClick={() => setNavBar((prev) => !prev)}
-                    >
-                      {links.name}
-                    </Link>
-                  </ul>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div className="bg-transparent"></div>
-          )}
-        </section>
-        <h3 className=" w-[30%] md:w-[25%] h-auto absolute bottom-[9%] md:bottom-3/4 left-2 md:left-28 text-segGrey text-lg leading-relaxed block lg:hidden">
+        <h3 className=" w-[30%] md:w-[25%] h-auto absolute bottom-[30%] md:bottom-3/4 left-40 md:left-28 text-segGrey text-lg leading-relaxed block lg:hidden">
           Engineering Solution for Everyone.
         </h3>
         <div className="w-2/3 h-auto absolute bottom-6 left-28 hidden md:block lg:hidden">
