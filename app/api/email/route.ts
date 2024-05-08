@@ -26,11 +26,11 @@ export async function POST(request: NextRequest) {
   try {
     await sendMailPromise(mailOptions);
     const jsonResponse = { message: "Email sent" };
-    //console.log('Response:', jsonResponse); // Add this line for logging
-    return NextResponse.json(jsonResponse);
+    //console.log("Response:", jsonResponse); // Add this line for logging
+    return NextResponse.json(jsonResponse, { status: 200 });
   } catch (err) {
     const errorResponse = { error: err };
-    //console.log('Error Response:', errorResponse); // Add this line for logging
+    //console.log("Error Response:", errorResponse); // Add this line for logging
     return NextResponse.json(errorResponse, { status: 500 });
   }
 }

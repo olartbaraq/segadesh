@@ -33,7 +33,7 @@ const contactFormSchema = z.object({
       invalid_type_error: "Name must be of word of alphabets",
     })
     .min(2, {
-      message: "I know you're busy but please enter your name",
+      message: "Please enter your name",
     })
     .max(150, {
       message: "Name must be not exit 150 characters.",
@@ -60,7 +60,7 @@ const contactFormSchema = z.object({
       invalid_type_error: "Message must be of word of alphabets",
     })
     .min(2, {
-      message: "i will be glad if you leave me a message",
+      message: "We 'll be glad if you leave us a message",
     }),
 });
 
@@ -102,30 +102,28 @@ const About = () => {
       headers: {
         "Content-Type": "application/json", // Specify the content type
       },
-    })
-      .then((res) => res.json())
-      .then((response) => {
+    }).then((res) => {
+      if (res.status == 200) {
         toast({
           title: "Thanks for reaching out",
-          description: "I'll get back to you shortly!",
+          description: "We'll get back to you shortly!",
         });
         setSending(false);
         form.reset();
-        //alert(response.message);
-      })
-      .catch((err) => {
+      } else {
         toast({
-          title: "Thanks for reaching out",
-          description: "I'll get back to you shortly!",
+          title: "Oops!!!",
+          description: "A problem occurred, Try again later!!!",
         });
         setSending(false);
         form.reset();
-        //alert(err);
-      });
+      }
+    });
   }
 
   return (
     <div className="max-w-full overflow-x-hidden">
+      {/* About us Heading */}
       <div className="w-full h-auto relative">
         <Image
           className="w-full h-auto"
@@ -136,35 +134,43 @@ const About = () => {
           priority={true}
         />
 
-        <div className="absolute top-1/3 left-[20%] flex flex-col space-y-1 items-start">
-          <h2 className="capitalize text-white text-3xl leading-relaxed">
+        <div className="absolute top-[15%] md:top-1/3 left-10 md:left-[20%] flex flex-col space-y-1 items-start">
+          <h2 className="capitalize text-white text-lg md:text-3xl leading-relaxed">
             about us
           </h2>
-          <h5 className="text-white text-xl leading-relaxed">
+          <h5 className="text-white md:text-xl leading-relaxed">
             <BreadcrumbWithCustomSeparator pageName="About Us" />
           </h5>
         </div>
 
-        <div className="border-t-segRed border-t-4 w-64 h-auto flex flex-col space-y-2 items-start px-5 py-10 bg-white absolute top-1/4 right-28 opacity-70">
-          <h6 className="uppercase text-xs text-black leading-relaxed">
+        <div className="border-t-segRed border-t-4 w-32 md:w-56 lg:w-64 h-auto flex flex-col space-y-2 items-start px-2 md:px-5 md:py-5 lg:py-10 bg-white absolute top-[23%] md:top-1/4 right-10 md:right-28 opacity-70">
+          <h6 className="uppercase text-[10px] md:text-xs text-black leading-relaxed">
             call us today
           </h6>
-          <h2 className="font-bold text-xl leading-relaxed text-segBlue">
+          <h2 className="font-bold text-xs md:text-xl leading-relaxed text-segBlue">
             +234 8166893113
           </h2>
         </div>
       </div>
 
+      {/* The three images */}
       <div className="w-full flex items-center">
         <div className="mx-auto my-auto p-5 flex flex-col items-start justify-between lg:max-w-screen-lg">
-          <div className="w-full flex flex-row space-x-2 items-start">
+          <Image
+            src={"/crane.png"}
+            alt="about us image"
+            height={200}
+            width={380}
+            priority={true}
+            className="block md:hidden"
+          />
+          <div className="w-full md:flex flex-row space-x-2 items-start hidden">
             <Image
               src={"/crane.png"}
               alt="about us image"
               height={200}
               width={300}
               priority={true}
-              //className="w-1/2 h-auto"
             />
             <Image
               src={"/industrial.png"}
@@ -172,7 +178,6 @@ const About = () => {
               height={200}
               width={300}
               priority={true}
-              //className="w-1/2 h-auto"
             />
             <Image
               src={"/Rectangle5.png"}
@@ -180,16 +185,15 @@ const About = () => {
               height={300}
               width={310}
               priority={true}
-              //className="w-1/2 h-auto"
             />
           </div>
 
-          <h2 className="capitalize text-xl w-[70%] mt-10 leading-relaxed font-bold self-center">
+          <h2 className="capitalize text-sm md:text-xl w-[70%] mt-10 leading-relaxed font-bold self-center text-center md:text-start">
             We are providing the best customer service
           </h2>
 
-          <div className="w-full flex flex-row items-center space-x-5">
-            <h3 className="text-sm text-black w-[70%] text-justify my-3 leading-7">
+          <div className="w-full flex flex-col md:flex-row items-center space-y-3 md:space-x-5">
+            <h3 className=" text-xs md:text-sm text-black w-full md:w-[70%] text-justify my-3 md:leading-7 leading-relaxed">
               Segadesh is a leading provider of comprehensive technical
               services, headquartered in Ibadan, Nigeria. With over 25 years of
               experience and a proven track record of success, we have
@@ -246,21 +250,21 @@ const About = () => {
             className="w-full h-auto"
           />
 
-          <div className="w-auto h-auto flex flex-col items-center space-y-2 p-4 absolute top-[20%] left-[5%]">
+          <div className="w-auto h-auto flex flex-col items-center space-y-2 p-4 absolute top-[10%] md:top-[20%] left-10 md:left-[5%]">
             <h3 className="capitalize text-white font-light text-2xl leading-relaxed">
               get a quote
             </h3>
-            <h2 className="font-bold text-white text-4xl leading-relaxed capitalize">
+            <h2 className="font-bold text-white text-2xl md:text-4xl leading-relaxed capitalize">
               Build your future today
             </h2>
-            <p className="font-normal text-white text-sm leading-relaxed w-1/2">
+            <p className="font-normal text-white text-sm leading-relaxed w-1/2 hidden md:block">
               Unlock new possibilities and drive growth with our tailored
               solutions. Request a quote today and let our experts craft a
               strategy that aligns with your unique business needs.
             </p>
           </div>
 
-          <div className="absolute bottom-1 left-24 w-auto p-3 flex space-x-4 items-center">
+          <div className="absolute bottom-1 left-24 w-auto p-3 lg:flex space-x-4 items-center hidden ">
             {QUOTES.map((quote) => (
               <div
                 key={quote.id}
@@ -288,13 +292,13 @@ const About = () => {
       {/* Form for getting Quote */}
 
       <div className=" w-full flex items-center">
-        <div className="p-5 flex items-center justify-center w-full space-x-10">
-          <div className="w-auto h-auto p-6 items-center flex">
+        <div className="p-5 flex md:flex-row flex-col items-center justify-center w-full space-y-5 md:space-x-10">
+          <div className=" w-full md:w-1/2 h-auto p-6 items-center flex">
             <div className="w-full ">
               <h6 className="uppercase text-segRed text-xs font-light self-start">
                 appointment
               </h6>
-              <h2 className="capitalize text-segBlue font-semibold leading-relaxed text-2xl mb-5">
+              <h2 className="capitalize text-segBlue font-semibold leading-relaxed text-2xl mb-7">
                 Request a quote
               </h2>
               <Form {...form}>
@@ -384,7 +388,7 @@ const About = () => {
                     {sending ? (
                       <button
                         disabled
-                        className="w-50 h-32 flex space-x-5 items-center self-center"
+                        className="w-50 h-18 flex space-x-5 items-center self-center"
                       >
                         <hr className="border border-segRed bg-segRed w-1 h-10" />
                         <Loader2
@@ -398,7 +402,7 @@ const About = () => {
                       </button>
                     ) : (
                       <button
-                        className="w-50 h-32 flex space-x-5 items-center self-center"
+                        className="w-50 h-18 flex space-x-5 items-center self-center"
                         type="submit"
                       >
                         <hr className="border border-segRed bg-segRed w-1 h-10" />
