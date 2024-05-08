@@ -25,7 +25,7 @@ export const LINKS = [
   {
     id: 4,
     name: "Projects",
-    href: "/projects" as const,
+    href: "/portfolio" as const,
     icon: <Briefcase color="#00215B" />,
   },
   {

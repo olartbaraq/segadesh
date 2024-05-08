@@ -148,7 +148,7 @@ const About = () => {
             call us today
           </h6>
           <h2 className="font-bold text-xs md:text-xl leading-relaxed text-segBlue">
-            +234 8166893113
+            +234 8173054765
           </h2>
         </div>
       </div>
@@ -406,7 +406,9 @@ const About = () => {
                         type="submit"
                       >
                         <hr className="border border-segRed bg-segRed w-1 h-10" />
-                        <p className="text-xl font-bold text-segBlue">SUMBIT</p>
+                        <p className="text-xl font-bold text-segBlue">
+                          GET QUOTE
+                        </p>
                         <hr className="border border-segRed bg-segRed w-1 h-10" />
                       </button>
                     )}

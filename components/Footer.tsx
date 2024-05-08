@@ -44,7 +44,7 @@ const Footer = () => {
               call us today
             </h3>
             <h3 className="text-[6px] md:text-xl font-bold leading-relaxed text-white">
-              +234 8166893113
+              +234 8173054765
             </h3>
           </div>
 
