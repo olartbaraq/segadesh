@@ -85,7 +85,7 @@ const About = () => {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
 
-    const apiEndpoint = "/api/email";
+    const apiEndpoint = "/api/quote";
 
     setSending(true);
 

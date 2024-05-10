@@ -1,7 +1,7 @@
 export const QUICK_LINKS = [
   { id: 1, href: "/about" as const, name: "About Company" },
   { id: 2, href: "/services" as const, name: "Our Services" },
-  { id: 3, href: "/projects" as const, name: "Our Projects" },
+  { id: 3, href: "/portfolio" as const, name: "Our Projects" },
   { id: 4, href: "/pricing" as const, name: "Pricings" },
   { id: 5, href: "/contacts" as const, name: "Contacts" },
 ];

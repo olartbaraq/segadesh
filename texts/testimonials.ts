@@ -17,23 +17,23 @@ export const TESTIMONIALS = [
   },
   {
     id: 3,
-    image: "/img.png",
+    image: "/kim.jpeg",
     name: "Michael Kim",
-    title: "Lead Technician - AutomationPro",
+    title: "Lead Technician - ATTOMATION",
     comment:
       "Office automation is a critical aspect of our business, and Segadesh has been a game-changer for us. Their innovative solutions have streamlined our processes, improved efficiency, and ultimately enhanced our productivity. Their team's professionalism and technical expertise are truly remarkable.",
   },
   {
     id: 4,
-    image: "/img.png",
-    name: "Emily Davis",
+    image: "/raju.jpeg",
+    name: "Raju Singh",
     title: "CEO - EnergyTech",
     comment:
       "In the energy metering industry, accuracy and reliability are paramount. Segadesh's cutting-edge solutions have provided us with precise data and insights, enabling us to make informed decisions and optimize our energy management strategies. Their commitment to excellence is truly commendable.",
   },
   {
     id: 5,
-    image: "/img.png",
+    image: "/david.jpeg",
     name: "David Ajani",
     title: "Head Robotics -  ManufacturingGiant",
     comment:
