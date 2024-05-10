@@ -196,7 +196,7 @@ const Home = () => {
           src={"/map.png"}
           alt="our address"
           height={100}
-          width={1000}
+          width={700}
           priority={true}
         />
         <div className="w-full flex flex-col md:flex-row items-start justify-center mt-3">

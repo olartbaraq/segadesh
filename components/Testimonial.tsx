@@ -36,8 +36,8 @@ const Testimonial = () => {
                       className="w-48 md:w-64 h-auto"
                       src={eachTest.image}
                       alt={eachTest.image}
-                      height={200}
-                      width={100}
+                      height={300}
+                      width={200}
                       priority={true}
                     />
                     <div className="flex flex-col w-full md:w-[500px] lg:w-[700px] p-4 items-center justify-center md:items-start space-y-2">
