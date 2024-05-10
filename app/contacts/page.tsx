@@ -266,7 +266,7 @@ const Contacts = () => {
         {/* Address */}
         <div className="flex w-full flex-col items-center space-y-3 mt-10">
           <Image
-            src={"/Map.png"}
+            src={"/map.png"}
             alt={"map address"}
             height={150}
             width={400}
