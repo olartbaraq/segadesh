@@ -11,8 +11,10 @@ import {
 
 export function BreadcrumbWithCustomSeparator({
   pageName,
+  showSecond = false,
 }: {
   pageName: string;
+  showSecond?: boolean;
 }) {
   return (
     <Breadcrumb>
@@ -25,6 +27,21 @@ export function BreadcrumbWithCustomSeparator({
         <BreadcrumbSeparator>
           <Slash color="#ffffff" />
         </BreadcrumbSeparator>
+        {/* Second Link */}
+        {showSecond && (
+          <>
+            <BreadcrumbItem>
+              <BreadcrumbLink className="text-white" href="/portfolio">
+                Projects
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator>
+              <Slash color="#ffffff" />
+            </BreadcrumbSeparator>
+          </>
+        )}
+
+        {/* Third Link */}
         <BreadcrumbItem>
           <BreadcrumbPage className="text-white">{pageName}</BreadcrumbPage>
         </BreadcrumbItem>

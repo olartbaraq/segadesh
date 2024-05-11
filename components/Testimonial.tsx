@@ -15,7 +15,7 @@ import { TESTIMONIALS } from "@/texts/testimonials";
 
 const Testimonial = () => {
   const plugin = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnLastSnap: false })
+    Autoplay({ delay: 5000, stopOnInteraction: false, stopOnLastSnap: false })
   );
   return (
     <div>

@@ -18,7 +18,7 @@ const Project = () => {
         <div key={project.id} className="relative">
           <Image
             className="w-auto h-auto hidden md:block"
-            src={project.image}
+            src={project.mainImage}
             alt={project.title}
             height={300}
             width={200}
@@ -27,7 +27,7 @@ const Project = () => {
 
           <Image
             className="w-auto h-auto block md:hidden"
-            src={project.image}
+            src={project.mainImage}
             alt={project.title}
             height={200}
             width={150}
