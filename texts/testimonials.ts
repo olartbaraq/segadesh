@@ -2,7 +2,7 @@ export const TESTIMONIALS = [
   {
     id: 1,
     image: "/grey-industries.jpeg",
-    name: "John Kingsley",
+    name: "John Adigun",
     title: "CEO - Grey Industries",
     comment:
       "Segadesh's expertise in mechanical and electrical services has been instrumental in our company's growth. Their attention to detail and commitment to excellence have consistently delivered outstanding results, enabling us to optimize our operations and stay ahead of the competition.",
@@ -18,7 +18,7 @@ export const TESTIMONIALS = [
   {
     id: 3,
     image: "/kim.jpeg",
-    name: "Michael Kim",
+    name: "Udeme Akpan",
     title: "Lead Technician - ATTOMATION",
     comment:
       "Office automation is a critical aspect of our business, and Segadesh has been a game-changer for us. Their innovative solutions have streamlined our processes, improved efficiency, and ultimately enhanced our productivity. Their team's professionalism and technical expertise are truly remarkable.",
@@ -26,7 +26,7 @@ export const TESTIMONIALS = [
   {
     id: 4,
     image: "/raju.jpeg",
-    name: "Raju Singh",
+    name: "Victor Akinyemi",
     title: "CEO - EnergyTech",
     comment:
       "In the energy metering industry, accuracy and reliability are paramount. Segadesh's cutting-edge solutions have provided us with precise data and insights, enabling us to make informed decisions and optimize our energy management strategies. Their commitment to excellence is truly commendable.",

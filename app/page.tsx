@@ -209,7 +209,7 @@ const Home = () => {
             </p>
           </div>
           <hr className="h-20 w-[2px] bg-segRed m-6 hidden md:block" />
-          <div className="flex flex-col space-y-1 w-60 p-2 border-t-4 border-t-segRed">
+          <div className="flex flex-col space-y-1 w-auto p-2 border-t-4 border-t-segRed">
             <h2 className="uppercase text-black text-xs leading-relaxed">
               company phone
             </h2>
@@ -218,7 +218,7 @@ const Home = () => {
             </p>
           </div>
           <hr className="h-20 w-[2px] bg-segRed m-6 hidden md:block" />
-          <div className="flex flex-col space-y-1 w-60 p-2 border-t-4 border-t-segRed">
+          <div className="flex flex-col space-y-1 w-auto p-2 border-t-4 border-t-segRed">
             <h2 className="uppercase text-black text-xs leading-relaxed">
               company email
             </h2>
