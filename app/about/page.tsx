@@ -195,36 +195,35 @@ const About = () => {
           <div className="w-full flex flex-col md:flex-row items-center space-y-3 md:space-x-5">
             <h3 className=" text-xs md:text-sm text-black w-full md:w-[70%] text-justify my-3 md:leading-7 leading-relaxed">
               Segadesh is a leading provider of comprehensive technical
-              services, headquartered in Ibadan, Nigeria. With over 25 years of
-              experience and a proven track record of success, we have
-              established ourselves as a trusted partner for businesses across
-              various industries. Our expertise spans a wide range of services,
-              including mechanical, electrical, construction, office automation,
-              and energy metering solutions. We take pride in our ability to
-              deliver tailored solutions that address the unique challenges and
-              requirements of each client, enabling them to achieve operational
-              excellence and maximize their potential. At Segadesh, we
-              understand the importance of staying ahead of the curve in an
-              ever-evolving technological landscape. Our team of highly skilled
-              professionals combines extensive knowledge and experience with a
-              commitment to continuous learning and innovation. This approach
-              ensures that we provide our clients with cutting-edge solutions
-              that drive efficiency, productivity, and long-term sustainability.
-              Over the years, we have successfully completed more than 147
-              projects, cementing our reputation as a reliable and
-              results-driven partner. Our unwavering dedication to quality,
-              attention to detail, and commitment to meeting deadlines have
-              earned us the trust and loyalty of clients across various sectors.
-              As we continue to grow and expand our capabilities, our core
-              values remain unchanged: integrity, innovation, and a relentless
-              pursuit of excellence. We take pride in our ability to foster
-              long-lasting relationships with our clients, built on a foundation
-              of transparency, open communication, and a shared commitment to
-              success. At Segadesh, we are more than just a service provider; we
-              are a strategic partner dedicated to helping businesses thrive in
-              an increasingly competitive and dynamic market. Join us on this
-              journey, and together, we will unlock new frontiers of growth and
-              success.
+              services, headquartered in Ibadan, Nigeria. With a proven track
+              record of success and execellence, we have established ourselves
+              as a trusted partner for businesses across various industries. Our
+              expertise spans a wide range of services, including mechanical,
+              electrical, construction, office automation, and energy metering
+              solutions. We take pride in our ability to deliver tailored
+              solutions that address the unique challenges and requirements of
+              each client, enabling them to achieve operational excellence and
+              maximize their potential. At Segadesh, we understand the
+              importance of staying ahead of the curve in an ever-evolving
+              technological landscape. Our team of highly skilled professionals
+              combines extensive knowledge and experience with a commitment to
+              continuous learning and innovation. This approach ensures that we
+              provide our clients with cutting-edge solutions that drive
+              efficiency, productivity, and long-term sustainability. Over the
+              years, we have successfully completed more than 147 projects,
+              cementing our reputation as a reliable and results-driven partner.
+              Our unwavering dedication to quality, attention to detail, and
+              commitment to meeting deadlines have earned us the trust and
+              loyalty of clients across various sectors. As we continue to grow
+              and expand our capabilities, our core values remain unchanged:
+              integrity, innovation, and a relentless pursuit of excellence. We
+              take pride in our ability to foster long-lasting relationships
+              with our clients, built on a foundation of transparency, open
+              communication, and a shared commitment to success. At Segadesh, we
+              are more than just a service provider; we are a strategic partner
+              dedicated to helping businesses thrive in an increasingly
+              competitive and dynamic market. Join us on this journey, and
+              together, we will unlock new frontiers of growth and success.
             </h3>
 
             <Image

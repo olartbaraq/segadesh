@@ -20,10 +20,10 @@ const HeroSection = () => {
         </h3>
         <div className="w-2/3 h-auto absolute bottom-1/4 left-28 ">
           <p className="text-lg leading-10 text-white text-justify">
-            For over 20 years, Segadesh has been at the forefront of delivering
-            pioneering engineering solutions across diverse domains. Our
-            unwavering commitment to excellence has solidified our position as a
-            trusted partner for companies seeking innovative mechanical,
+            For a quite number of years, Segadesh has been at the forefront of
+            delivering pioneering engineering solutions across diverse domains.
+            Our unwavering commitment to excellence has solidified our position
+            as a trusted partner for companies seeking innovative mechanical,
             electrical, construction, office automation, and energy metering
             services.With a team of highly skilled professionals and a wealth of
             industry experience, we pride ourselves on providing tailored
@@ -55,10 +55,10 @@ const HeroSection = () => {
           {/* Years of experience */}
           <div className="flex flex-col items-center h-auto w-auto p-5 bg-segRed">
             <h3 className="text-white text-4xl leading-relaxed font-bold">
-              20+
+              4+
             </h3>
             <h6 className="text-white text-[12px] leading-relaxed">
-              Years of Experience
+              Distinct Services
             </h6>
           </div>
           {/* some features */}
@@ -148,10 +148,10 @@ const HeroSection = () => {
         </h3>
         <div className="w-2/3 h-auto absolute bottom-6 left-28 hidden md:block lg:hidden">
           <p className="text-xs leading-7 text-white text-justify">
-            For over 20 years, Segadesh has been at the forefront of delivering
-            pioneering engineering solutions across diverse domains. Our
-            unwavering commitment to excellence has solidified our position as a
-            trusted partner for companies seeking innovative mechanical,
+            For a quite number of years, Segadesh has been at the forefront of
+            delivering pioneering engineering solutions across diverse domains.
+            Our unwavering commitment to excellence has solidified our position
+            as a trusted partner for companies seeking innovative mechanical,
             electrical, construction, office automation, and energy metering
             services.With a team of highly skilled professionals and a wealth of
             industry experience, we pride ourselves on providing tailored

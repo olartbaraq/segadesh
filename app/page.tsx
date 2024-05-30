@@ -223,7 +223,7 @@ const Home = () => {
               company email
             </h2>
             <p className="font-bold text-segBlue leading-relaxed text-base">
-              segadesh@yahoo.com
+              segadesh.engineeringltd@gmail.com
             </p>
           </div>
           <hr className="h-20 w-[2px] bg-segRed m-6 hidden md:block" />
