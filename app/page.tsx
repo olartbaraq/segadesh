@@ -200,16 +200,27 @@ const Home = () => {
           priority={true}
         />
         <div className="w-full flex flex-col md:flex-row items-start justify-center mt-3">
-          <div className="flex flex-col space-y-1 w-60 p-2 border-t-4 border-t-segRed">
+          <div className="flex flex-col space-y-2 w-96 p-2 border-t-4 border-t-segRed">
             <h2 className="uppercase text-black text-xs leading-relaxed">
               company address
             </h2>
-            <p className="font-bold text-segBlue leading-relaxed text-base">
-              Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA
-            </p>
+
+            <div className="flex space-x-2 items-center">
+              <div className="h-10 w-10 border rounded-full bg-segRed"></div>
+              <p className="font-bold text-segBlue leading-relaxed text-base">
+                Christ Embassy Way, Asese Bus Stop, Lagos - Ibadan Express Way.
+              </p>
+            </div>
+
+            <div className="flex space-x-2 items-center">
+              <div className="h-10 w-8 border rounded-full bg-segRed"></div>
+              <p className="font-bold text-segBlue leading-relaxed text-base">
+                Ekerin Shopping Complex Oyero Road, Ifo Ogun State.
+              </p>
+            </div>
           </div>
           <hr className="h-20 w-[2px] bg-segRed m-6 hidden md:block" />
-          <div className="flex flex-col space-y-1 w-auto p-2 border-t-4 border-t-segRed">
+          <div className="flex flex-col space-y-2 w-auto p-2 border-t-4 border-t-segRed">
             <h2 className="uppercase text-black text-xs leading-relaxed">
               company phone
             </h2>
@@ -218,7 +229,7 @@ const Home = () => {
             </p>
           </div>
           <hr className="h-20 w-[2px] bg-segRed m-6 hidden md:block" />
-          <div className="flex flex-col space-y-1 w-auto p-2 border-t-4 border-t-segRed">
+          <div className="flex flex-col space-y-2 w-auto p-2 border-t-4 border-t-segRed">
             <h2 className="uppercase text-black text-xs leading-relaxed">
               company email
             </h2>
